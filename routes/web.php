@@ -8,6 +8,7 @@ use App\Livewire\BlogDetail;
 use App\Livewire\ShowFaqPage;
 use App\Livewire\ShowPage;
 use App\Livewire\ShowContactPage;
+use App\Livewire\ShowGames;
 
 use Illuminate\Support\Facades\Route;
 
@@ -24,3 +25,4 @@ Route::get('/blog/{id}', BlogDetail::class)->name('blogDetail');
 Route::get('/faqs', ShowFaqPage::class)->name('faqs');
 Route::get('/page/{id}', ShowPage::class)->name('page');
 Route::get('/contact', ShowContactPage::class)->name('contact');
+Route::get('/games', ShowGames::class)->name('games');
